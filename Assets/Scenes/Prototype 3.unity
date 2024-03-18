@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 4219823128636925857, guid: d7539e2430c198f41b723a9f57e76f8f, type: 3}
+  startDelay: 2
+  repeatRate: 2
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4c6e632b3f2ae4e86b25f2f1c967aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 15
   gravityModifier: 5
   isOnGround: 1
   gameOver: 1

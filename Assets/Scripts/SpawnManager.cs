@@ -6,8 +6,8 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab;
     private Vector3 spawnPos = new Vector3(25, 0, 0);
-    private float startDelay = 2;
-    private float repeatRate = 2;
+    [SerializeField]private float startDelay = 2;
+    [SerializeField]private float repeatRate = 2;
     private PlayerControler playerControlerScript;
 
     void Start()
@@ -23,11 +23,11 @@ public class SpawnManager : MonoBehaviour
     void SpawnObstacle()
     {
         //Step 3.1.9
-        //Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+        Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
 
-        if(playerControlerScript.gameOver == false)
+        /*if(playerControlerScript.gameOver == false)
         {
             Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
-        }
+        }*/
     }
 }
